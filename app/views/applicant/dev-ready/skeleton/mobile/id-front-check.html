@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+Check the photo of the front of your driving licence
+{% endblock %}
+
+
+{% block outerContent %}
+  {{ backLink({
+    "href": "/applicant/dev-ready/skeleton/mobile/id-front",
+    "text": "Back",
+    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
+{% endblock %}
+
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds"> 
+     
+        <h1 class="nhsuk-heading-xl">
+          Check the photo of the front of your driving licence
+        </h1>
+
+
+        <div class="nhsuk-warning-callout">
+          <h3 class="nhsuk-warning-callout__label">
+            <span role="text">
+              <span class="nhsuk-u-visually-hidden">Important: </span>
+              Important
+            </span>
+          </h3>
+          <p>If the text is blurry or your photo does not include all 4 corners you may need to complete your application again.</p>
+        </div> 
+
+        <figure class="nhsuk-image nhsuk-u-width-two-thirds nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-6">
+          <img class="nhsuk-image__img" src="/images/dl-front.png" alt="photo of your face">
+        </figure>
+ 
+
+        <p class="nhsuk-u-margin-bottom-0"><a href="/applicant/dev-ready/skeleton/mobile/spinner-id-front" class="nhsuk-button nhsuk-u-width-one-third">Submit photo</a></p>
+        
+        <p><a href="/applicant/dev-ready/skeleton/mobile/id-front" class="nhsuk-button nhsuk-button--secondary nhsuk-u-width-one-third">Retake photo</a></p>
+
+
+
+        
+        
+  
+    </div>
+
+  </div>
+
+{% endblock %}
