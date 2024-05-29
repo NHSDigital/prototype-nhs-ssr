@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Enter your UK postcode
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+  {{ backLink({
+    "href": "/applicant/v22/step-1/dpoa",
+    "text": "Back",
+    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      
+
+      <form action="/applicant/v22/step-1/address-select" method="post" class="form">
+
+          <div class="nhsuk-form-group">
+            <h1 class="nhsuk-label-wrapper">
+              <label class="nhsuk-label nhsuk-label--xl" for="address-postcode-1">
+                Enter your UK postcode
+              </label>
+            </h1>
+
+            <details class="nhsuk-details">
+              <summary class="nhsuk-details__summary">
+                <span class="nhsuk-details__summary-text">
+                  I am a student living away from home, have more than 1 address or have recently moved
+                </span>
+              </summary>
+              <div class="nhsuk-details__text">
+                <p>Enter the address with the most connections to your name. For example:</p>
+                <ul>
+                  <li>banks</li>
+                  <li>utility providers </li>
+                  <li>electoral register</li>
+                </ul>
+              </div>
+            </details>
+
+
+            <input class="nhsuk-input nhsuk-input--width-10" id="address-postcode-1" name="address-postcode-1" type="text" value="{{ data['address-postcode-1'] }}">
+          </div>
+        
+  
+        {{ button({
+          "text": "Find address"
+        }) }}
+
+      </form>
+
+      
+
+    </div>
+  </div>
+
+{% endblock %}

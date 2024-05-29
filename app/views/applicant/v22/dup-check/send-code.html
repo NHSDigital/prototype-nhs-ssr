@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Send a security code to your phone
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+  {{ backLink({
+    "href": "/applicant/v22/dup-check/start",
+    "text": "Back",
+    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
+{% endblock %}
+
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1 class="nhsuk-heading-xl">
+        Send a security code to your phone
+      </h1>
+
+      <p>To continue with the application you will need to enter a 6 digit security code.</p>
+
+      <p>Send the security code to your mobile phone number ending *********<strong>5314</strong>.
+      </p>
+
+
+
+      <a href="/applicant/v22/dup-check/security-code" class="nhsuk-button">
+        Send code
+      </a>
+
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Mobile number is incorrect
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+         
+          <p>Email <a href="#">ra-services-birmingham@nhs.net</a> to get your mobile number updated.</p>
+          <p>What to include in your email:</p>
+          <ul>
+            <li>subject line: Apply for Care ID - update mobile number</li>
+            <li>your application ID (4650349sc-28449347-ck340347-cn34834)</li>
+          </ul>
+        </div>
+      </details>
+
+    </div>
+
+  </div>
+{% endblock %}
