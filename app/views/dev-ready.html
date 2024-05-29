@@ -40,9 +40,6 @@
 
         
         <p>Tickets in development:</p>
-        <ul>
-          <li>Add new rejection reasons (CIDV-3012)</li>
-        </ul>
 
         <p>Tickets in the backlog:</p>
 
@@ -51,6 +48,8 @@
           <li>Add an image cropper to the Review your photo page (CIDV-2904)</li>       
           <li>Improve security code send again behaviour (CIDV-2345)</li>  
           <li>Update applicant error validation messages (CIDV-2527)</li> 
+          <li>Update applicant error pages (CIDV-3091)</li> 
+          <li>Add a timeout warning and error page (CIDV-3092)</li> 
         </ul>
 
         <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
@@ -161,6 +160,55 @@
         </ul>
 
         <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+
+        <h3>Skeleton service</h3>
+
+        <h4>Web journey</h4>
+        <ul>
+          <li><a href="/applicant/dev-ready/skeleton/web/start">Start page</a></li>
+          <li><a href="/applicant/dev-ready/skeleton/web/poa">Select a proof of address</a></li>
+          <li><a href="/applicant/dev-ready/skeleton/web/passport">Select a photo ID (passport)</a></li>
+          <li><a href="/applicant/dev-ready/skeleton/web/1-photo-id">Select a photo ID (other)</a></li>
+          <li><a href="/applicant/dev-ready/skeleton/web/2-photo-id">Select 2 photo IDs</a></li>
+          <li><a href="/applicant/dev-ready/skeleton/web/check-your-details-dpoa">Check your details</a></li>
+          <li><a href="/applicant/dev-ready/skeleton/web/link-sent">A link has been sent to your mobile</a></li>
+        </ul>
+
+        <h4>Mobile journey</h4>
+
+        <ul>
+          <li><a href="/applicant/dev-ready/skeleton/mobile/start-mobile">Mobile start page</a></li>
+          <li><a href="/applicant/dev-ready/skeleton/mobile/passport">Take a photo of your passport</a></li>
+          <li><a href="/applicant/dev-ready/skeleton/mobile/passport-check">Check the photo of your passport</a></li>
+          <li><a href="/applicant/dev-ready/skeleton/mobile/id-front">Take a photo of the front of your [id-type]</a></li>
+          <li><a href="/applicant/dev-ready/skeleton/mobile/id-front-check">Check the photo of the front of your [id-type]</a></li>
+          <li><a href="/applicant/dev-ready/skeleton/mobile/id-back">Take a photo of the back of your [id-type]</a></li>
+          <li><a href="/applicant/dev-ready/skeleton/mobile/id-back-check">Check the photo of the back of your [id-type]</a></li>
+          <li><a href="/applicant/dev-ready/skeleton/mobile/poa">Take a photo of the back of your [poa-type]</a></li>
+          <li><a href="/applicant/dev-ready/skeleton/mobile/poa-check">Check the photo of your [poa-type]</a></li>
+          <li><a href="/applicant/dev-ready/skeleton/mobile/face-scan">Take a photo of your face</a></li>
+          <li><a href="/applicant/dev-ready/skeleton/mobile/face-scan-check">Check the photo of your face</a></li>
+          <li><a href="/applicant/dev-ready/skeleton/mobile/submitted">Your application has been submitted</a></li>
+        </ul>
+
+        <h4>Notifications</h4>
+
+        <ul>
+          <li><a href="/applicant/dev-ready/skeleton/notifications/sms-pyi-link">SMS link to start mobile journey</a></li>
+          <li><a href="/applicant/dev-ready/skeleton/notifications/sms-reminder">SMS reminder to start mobile journey</a></li>
+          <li><a href="/applicant/dev-ready/skeleton/notifications/email-reminder">Email reminder to start mobile journey</a></li>
+        </ul>
+
+        <h4>Error pages</h4>
+
+        <ul>
+          <li><a href="/applicant/dev-ready/skeleton/errors/device-not-supported">Device not supported</a></li>
+          <li><a href="/applicant/dev-ready/skeleton/errors/camera-permissions">Camera permissions blocked</a></li>
+          <li><a href="/applicant/dev-ready/skeleton/errors/pyi-link-sent">Link to mobile journey has already been sent</a></li>
+          <li><a href="/applicant/dev-ready/skeleton/errors/pyi-link-expired">Link to mobile journey has expired</a></li>
+        </ul>
+
+        <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
   
         <h3>Notifications</h3>
   
@@ -232,12 +280,16 @@
         
         <p>Tickets in development:</p>
 
-       <p>Tickets in the backlog:</p>
+        <ul>
+          <li>Improve messaging when an application is locked (CIDV-2852)</li>
+        </ul>
+
+        <p>Tickets in the backlog:</p>
         <ul>
         
           <li>Contact email address and Help for applicant email address bugs (CIDV-2517)</li>
-          <li>Enter applicant details error validation bug (CIDV-2360)</li>
-          <li>Improve messaging when an application is locked (CIDV-2852)</li>
+          <li>Add warning and info notifications to inviter dashboard (CIDV-3036)</li>
+          
         </ul>
 
         <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
@@ -380,9 +432,8 @@
 
         <ul>
           <li>Update final duplicate check behaviour (CIDV-2982)</li>
-          <li>Update Put on hold behaviour (CIDV-2981)</li>
-          <li>Display more name details (CIDV-2943)</li>
-          <li>Improve ID checker error validation and error message display (CIDV-2368)</li>
+          <li>Improve ID checker error validation and error message display (CIDV-3148)</li>
+          <li>Increase number of results in lists (CIDV-3001)</li>
         </ul>
  
 
@@ -462,12 +513,6 @@
         <h2>Service Manager</h2>
         <h3 class="nhsuk-u-margin-bottom-3 "><a class="nhsuk-link--no-visited-state" href="/service/dev-ready/dashboard">Service Manager ready for development prototype</a></h3>
 
-        
-        <p>Tickets in development:</p>
-        <ul>
-          <li>Cancel applications (CIDV-2417)</li>
-          <li>Overturn a rejection (CIDV-2081)</li>
-        </ul>
 
         <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
  
