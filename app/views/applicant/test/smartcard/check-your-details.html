@@ -1,0 +1,90 @@
+{% extends 'layout.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Check your answers
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+
+      <h1>
+        Check your details
+      </h1>
+
+      <dl class="nhsuk-summary-list">
+
+
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            Photo IDs selected
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            passport, driving licence
+          </dd>
+          <dd class="nhsuk-summary-list__actions">
+            <a href="">
+              Change<span class="nhsuk-u-visually-hidden"> Photo ID document</span>
+            </a>
+          </dd>
+        </div> 
+
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            Proof of address document selected
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            bank statement
+          </dd>
+          <dd class="nhsuk-summary-list__actions">
+            <a href="">
+              Change<span class="nhsuk-u-visually-hidden"> Photo ID document</span>
+            </a>
+          </dd>
+        </div> 
+        
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            Photo for your smartcard
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            <div id="smartcard-container-small" class="nhsuk-u-margin-top-5">
+              <img id="card-layout-small" class="nhsuk-image__img" src="/images/careid-example.png" alt="smartcard preview">
+              <img id="pictureFromCameraA-small" src="/images/correct.png" class="nhsuk-image__img" alt="CareID Card Preview">
+              <p id="user-uuid-small">123456789012</p>
+              <p id="user-name-small">Your name</p>
+            </div>
+          </dd>
+          <dd class="nhsuk-summary-list__actions">
+            <a href="/applicant/test/smartcard/upload-photo">
+              Change<span class="nhsuk-u-visually-hidden"> your profile photo</span>
+            </a>
+          </dd>
+        </div>
+
+      </dl>
+
+
+      <form action="" method="post" class="form">
+
+
+        {{ button({
+          "text": "Submit now"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+
+  <script>
+
+
+
+  </script>
+{% endblock %}

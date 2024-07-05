@@ -325,6 +325,43 @@
     width:100%
   }
 
+  #smartcard-container-small {
+    position: relative; 
+    width: 340px; 
+    height: 218px;
+  }
+  #card-layout-small {
+    width: 340px; 
+    position: absolute;
+  }
+  #pictureFromCameraA-small {
+    width: 87px; 
+    height: 110px; 
+    position: absolute; 
+    right: 26px; 
+    top: 54px; 
+    object-fit: cover;
+  }
+ 
+  #user-uuid-small {
+    position: absolute; 
+    right: 26px; 
+    bottom: 32px; 
+    padding: 0; 
+    margin: 0; 
+    font-size: 0.64em;
+    font-weight: bold;
+  }
+  #user-name-small {
+    position: absolute; 
+    right: 26px; 
+    bottom: 18px; 
+    padding: 0; 
+    margin: 0; 
+    font-size: 0.64em;
+    font-weight: bold;
+  }
+
 
   
 }
@@ -387,6 +424,43 @@
 
   #preview-image {
     width:50%
+  }
+
+  #smartcard-container-small {
+    position: relative; 
+    width: 340px; 
+    height: 218px;
+  }
+  #card-layout-small {
+    width: 340px; 
+    position: absolute;
+  }
+  #pictureFromCameraA-small {
+    width: 87px; 
+    height: 110px; 
+    position: absolute; 
+    right: 26px; 
+    top: 54px; 
+    object-fit: cover;
+  }
+ 
+  #user-uuid-small {
+    position: absolute; 
+    right: 26px; 
+    bottom: 32px; 
+    padding: 0; 
+    margin: 0; 
+    font-size: 0.64em;
+    font-weight: bold;
+  }
+  #user-name-small {
+    position: absolute; 
+    right: 26px; 
+    bottom: 18px; 
+    padding: 0; 
+    margin: 0; 
+    font-size: 0.64em;
+    font-weight: bold;
   }
   
 }
@@ -454,6 +528,43 @@
 
   #preview-image {
     width:50%
+  }
+
+  #smartcard-container-small {
+    position: relative; 
+    width: 340px; 
+    height: 218px;
+  }
+  #card-layout-small {
+    width: 340px; 
+    position: absolute;
+  }
+  #pictureFromCameraA-small {
+    width: 87px; 
+    height: 110px; 
+    position: absolute; 
+    right: 26px; 
+    top: 54px; 
+    object-fit: cover;
+  }
+ 
+  #user-uuid-small {
+    position: absolute; 
+    right: 26px; 
+    bottom: 32px; 
+    padding: 0; 
+    margin: 0; 
+    font-size: 0.64em;
+    font-weight: bold;
+  }
+  #user-name-small {
+    position: absolute; 
+    right: 26px; 
+    bottom: 18px; 
+    padding: 0; 
+    margin: 0; 
+    font-size: 0.64em;
+    font-weight: bold;
   }
 
 
