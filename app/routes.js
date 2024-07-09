@@ -2421,7 +2421,7 @@ router.post('/applicant/v22/step-1/address-postcode', function (req, res) {
 
 
 
-router.post('/applicant/v22/step-2/upload-photo', function (req, res) {
+router.post('/applicant/v22/step-2/start', function (req, res) {
 
   // Make a variable and give it the value from 'how-many-balls'
   var photo1 = req.session.data['1-photo-id']
@@ -2432,7 +2432,7 @@ router.post('/applicant/v22/step-2/upload-photo', function (req, res) {
     res.redirect('/applicant/v22/offline/no-photo-id')
   } else {
     // Send user to ineligible page
-    res.redirect('/applicant/v22/step-2/upload-photo')
+    res.redirect('/applicant/v22/step-2/start')
   }
 
 })
@@ -2471,30 +2471,10 @@ router.post('/applicant/v22/offline/no-photo-id', function (req, res) {
     res.redirect('/applicant/v22/offline/no-photo-id')
   } else {
     // Send user to ineligible page
-    res.redirect('/applicant/v22/step-2/upload-photo')
+    res.redirect('/applicant/v22/step-2/start')
   }
 
 })
-
-
-
-router.post('/applicant/v22/step-2/check-your-details-dpoa', function (req, res) {
-
-  // Make a variable and give it the value from 'how-many-balls'
-  var reviewPhoto = req.session.data['profile']
-
-  // Check whether the variable matches a condition
-  if (reviewPhoto == "yes"){
-    // Send user to next page
-    res.redirect('/applicant/v22/step-2/check-your-details-dpoa')
-  } else {
-    // Send user to ineligible page
-    res.redirect('/applicant/v22/step-2/upload-photo')
-  }
-
-
-})
-
 
 
 
