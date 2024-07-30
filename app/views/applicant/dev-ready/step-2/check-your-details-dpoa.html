@@ -38,8 +38,11 @@
             Photo for your smartcard
           </dt>
           <dd class="nhsuk-summary-list__value">
-            <div class="container">
-              <img src="/images/biometric.png" alt="profile photo">
+            <div id="smartcard-container-small" class="nhsuk-u-margin-top-5">
+              <img id="card-layout-small" class="nhsuk-image__img" src="/images/careid-example.png" alt="smartcard preview">
+              <img id="pictureFromCameraA-small" src="/images/correct.png" class="nhsuk-image__img" alt="CareID Card Preview">
+              <p id="user-uuid-small">123456789012</p>
+              <p id="user-name-small">Your name</p>
             </div>
           </dd>
           <dd class="nhsuk-summary-list__actions">
@@ -66,7 +69,7 @@
       </dl>
 
 
-      <form action="/applicant/dev-ready/step-3/download-app" method="post" class="form">
+      <form action="/applicant/dev-ready/step-3/start" method="post" class="form">
 
 
         {{ button({

@@ -2536,23 +2536,9 @@ router.post('/applicant/dev-ready/step-1/poa', function (req, res) {
 
 })
 
-router.post('/applicant/dev-ready/step-1/1-photo-id', function (req, res) {
 
-  // Make a variable and give it the value from 'how-many-balls'
-  var passport = req.session.data['passport']
 
-  // Check whether the variable matches a condition
-  if (passport == "other"){
-    // Send user to next page
-    res.redirect('/applicant/dev-ready/step-1/1-photo-id')
-  } else {
-    // Send user to ineligible page
-    res.redirect('/applicant/dev-ready/step-2/profile-photo-upload')
-  }
-
-})
-
-router.post('/applicant/dev-ready/step-2/profile-photo-upload', function (req, res) {
+router.post('/applicant/dev-ready/step-2/start', function (req, res) {
 
   // Make a variable and give it the value from 'how-many-balls'
   var photo1 = req.session.data['1-photo-id']
@@ -2563,7 +2549,7 @@ router.post('/applicant/dev-ready/step-2/profile-photo-upload', function (req, r
     res.redirect('/applicant/dev-ready/offline/no-photo-id')
   } else {
     // Send user to ineligible page
-    res.redirect('/applicant/dev-ready/step-2/profile-photo-upload')
+    res.redirect('/applicant/dev-ready/step-2/start')
   }
 
 })
@@ -2595,7 +2581,7 @@ router.post('/applicant/dev-ready/offline/no-photo-id', function (req, res) {
     res.redirect('/applicant/dev-ready/offline/no-photo-id')
   } else {
     // Send user to ineligible page
-    res.redirect('/applicant/dev-ready/step-2/profile-photo-upload')
+    res.redirect('/applicant/dev-ready/step-2/start')
   }
 
 })
@@ -2617,22 +2603,6 @@ router.post('/applicant/dev-ready/step-2/delivery-postcode', function (req, res)
 
 })
 
-
-router.post('/applicant/dev-ready/step-2/delivery', function (req, res) {
-
-  // Make a variable and give it the value from 'how-many-balls'
-  var reviewPhoto = req.session.data['profile']
-
-  // Check whether the variable matches a condition
-  if (reviewPhoto == "yes"){
-    // Send user to next page
-    res.redirect('/applicant/dev-ready/step-2/delivery')
-  }  else {
-    // Send user to ineligible page
-    res.redirect('/applicant/dev-ready/step-2/profile-photo-upload')
-  }
-
-})
 
 
 
