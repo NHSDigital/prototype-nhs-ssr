@@ -1,0 +1,72 @@
+{% extends 'layout-service-dev-ready.html' %}
+
+{% block pageTitle %}
+  Write your alert
+{% endblock %}
+
+{% block outerContent %}
+  {{ backLink({
+    "href": "/service/dev-ready/alerts-type",
+    "text": "Back",
+    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <form action="/service/dev-ready/alerts-review" method="post" class="form">
+
+        <div class="nhsuk-form-group">
+
+          <fieldset class="nhsuk-fieldset">
+            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xl nhsuk-u-margin-bottom-7" >
+              <h1 class="nhsuk-fieldset__heading">
+                Write your alert
+              </h1>
+            </legend>
+
+            <p>To add a hyperlink, use this format: [link text|http://example.com]</p>
+            
+            <div class="nhsuk-form-group">
+              <label class="nhsuk-label" for="heading">
+                Heading
+              </label>
+              <textarea class="nhsuk-textarea" id="heading" name="heading" rows="2" value="{{ data['heading'] }}"></textarea>
+              <div class="nhsuk-hint nhsuk-u-padding-top-2" id="character-count-hint">
+                You have 200 characters remaining
+                </div>
+            </div>
+
+            <div class="nhsuk-form-group">
+              <label class="nhsuk-label" for="body">
+                Body (optional)
+              </label>
+              <textarea class="nhsuk-textarea" id="body" name="body" rows="2" value="{{ data['body'] }}"></textarea>
+              <div class="nhsuk-hint nhsuk-u-padding-top-2" id="character-count-hint">
+                You have 200 characters remaining
+                </div>
+            </div>
+            
+
+          </fieldset>
+        
+        </div>
+        
+
+        {{ button({
+          "text": "Continue"
+        }) }}
+
+      </form>
+        
+       
+  
+      
+
+
+    </div>
+
+  </div>
+{% endblock %}

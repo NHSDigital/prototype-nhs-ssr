@@ -1,0 +1,92 @@
+{% extends 'layout-service-dev-ready.html' %}
+
+{% block pageTitle %}
+  Review your alert
+{% endblock %}
+
+{% block outerContent %}
+  {{ backLink({
+    "href": "/service/dev-ready/alerts-content",
+    "text": "Back",
+    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>
+        Review and publish your alert
+      </h1>
+
+      <h2>Alert Preview</h2>
+        
+       
+      <div class="nhsuk-alert nhsuk-alert--info nhsuk-alert--icon">
+        <svg class="nhsuk-icon nhsuk-icon__info nhsuk-alert__icon" fill="none" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" height="25" width="25">
+          <path d="M13.7,18.5h-2.4v-2.4h2.4V18.5z M12.5,13.7c-0.7,0-1.2-0.5-1.2-1.2V7.7c0-0.7,0.5-1.2,1.2-1.2s1.2,0.5,1.2,1.2v4.8
+          C13.7,13.2,13.2,13.7,12.5,13.7z M12.5,0.5c-6.6,0-12,5.4-12,12s5.4,12,12,12s12-5.4,12-12S19.1,0.5,12.5,0.5z" />
+        </svg>
+        <h3 class="nhsuk-u-visually-hidden">Information:</h3>
+        <p class="nhsuk-u-font-weight-bold">{{ data['heading'] }}</p>
+        <p>{{ data['body'] }}</p>
+      </div>
+
+      <h2>Alert details</h2>
+
+
+      <dl class="nhsuk-summary-list">
+
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            Alert type
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            {{ data['alert-type'] }}
+          </dd>
+          <dd class="nhsuk-summary-list__actions">
+            <a href="/service/dev-ready/alerts-type">
+              Change<span class="nhsuk-u-visually-hidden"> alert type</span>
+            </a>
+          </dd>
+        </div> 
+
+
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            Heading
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            {{ data['heading'] }}
+          </dd>
+          <dd class="nhsuk-summary-list__actions">
+            <a href="/service/dev-ready/alerts-content">
+              Change<span class="nhsuk-u-visually-hidden"> heading</span>
+            </a>
+          </dd>
+        </div> 
+
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            Bodt
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            {{ data['body'] }}
+          </dd>
+          <dd class="nhsuk-summary-list__actions">
+            <a href="/service/dev-ready/alerts-content">
+              Change<span class="nhsuk-u-visually-hidden"> heading</span>
+            </a>
+          </dd>
+        </div> 
+       
+
+      </dl>
+      
+      <a class="nhsuk-button" href="/service/dev-ready/alerts-success">Publish alert</a>
+
+    </div>
+
+  </div>
+{% endblock %}
