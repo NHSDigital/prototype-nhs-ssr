@@ -1,0 +1,74 @@
+{% extends 'layout-service-dev-ready.html' %}
+
+{% block pageTitle %}
+  Select an alert type
+{% endblock %}
+
+{% block outerContent %}
+  {{ backLink({
+    "href": "/service/dev-ready/alerts-manage",
+    "text": "Back",
+    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <form action="/service/dev-ready/alerts-content" method="post" class="form">
+
+        <div class="nhsuk-form-group">
+
+          <fieldset class="nhsuk-fieldset">
+            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xl nhsuk-u-margin-bottom-7">
+              <h1 class="nhsuk-fieldset__heading">
+                Select an alert type
+              </h1>
+            </legend>
+        
+            <div class="nhsuk-radios">
+
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" id="info-1" name="alert-type" type="radio" value="information" {{ checked("info-1", "information") }} aria-describedby="info-hint">
+                <label class="nhsuk-label nhsuk-radios__label" for="info-1">
+                  Information alert
+                </label>
+                <div class="nhsuk-hint nhsuk-radios__hint" id="info-hint">
+                  Notify inviters of upcoming releases etc...
+                </div>
+              </div>
+
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" id="warning-1" name="alert-type" type="radio" value="warning" {{ checked("info-1", "warning") }} aria-describedby="warning-hint">
+                <label class="nhsuk-label nhsuk-radios__label" for="warning-1">
+                  Warning alert
+                </label>
+                <div class="nhsuk-hint nhsuk-radios__hint" id="warning-hint">
+                  Tell inviters there is an issue with the applicant service
+                </div>
+              </div>
+      
+ 
+      
+            </div>
+          </fieldset>
+        
+        </div>
+        
+
+        {{ button({
+          "text": "Continue"
+        }) }}
+
+      </form>
+        
+       
+  
+      
+
+
+    </div>
+
+  </div>
+{% endblock %}

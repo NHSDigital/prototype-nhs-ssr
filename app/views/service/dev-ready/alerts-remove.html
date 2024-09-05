@@ -1,0 +1,39 @@
+{% extends 'layout-service-dev-ready.html' %}
+
+{% block pageTitle %}
+  Cancel an application
+{% endblock %}
+
+{% block outerContent %}
+  {{ backLink({
+    "href": "/service/dev-ready/alerts-manage",
+    "text": "Back",
+    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>
+        Remove alert
+      </h1>
+
+      <p>The alert will no longer be displayed on the 'Manage applications' dashboard. </p>
+
+      <p>This action cannot be undone.</p>
+
+  
+
+      <a class="nhsuk-button nhsuk-button--secondary" href="/service/dev-ready/alerts-remove-success">Remove alert</a>
+        
+       
+  
+      
+
+
+    </div>
+
+  </div>
+{% endblock %}
