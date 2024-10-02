@@ -81,28 +81,39 @@
 
     <div class="nhsuk-card nhsuk-u-margin-bottom-5">
       <div class="nhsuk-card__content">
-        <h2 class="nhsuk-card__heading">
-          ID checking history
-        </h2>
+        <h2 class="nhsuk-card__heading">ID checking history</h2> 
+
+        <a class="nhsuk-button nhsuk-button--secondary nhsuk-u-margin-top-1" style="padding: 6px 16px; font-weight: normal;" href="/idchecker/v6/new-note">Add note</a> 
+
+        
 
         <div id="profile-history-timeline" class="nhs-cim-whole-timeline" >
+
+          <div class="nhs-cim-whole-timeline__item" >
+            <div class="nhs-cim-whole-timeline__header nhsuk-u-margin-bottom-2">
+              <h2 class="nhs-cim-whole-timeline__title">Note added</h2>
+              <p class="nhs-cim-whole-timeline__by">by Lloyd Wilkinson</p>
+              <p class="nhs-cim-whole-timeline__date"><time datetime="2021-12-22T09:11">24 April 2023, 12.34 pm</time></p>
+              <p class="nhs-cim-whole-timeline__description">Notes: Last name matches passport but not proof of address</p>            
+            </div>
+          </div>
 
           <div class="nhs-cim-whole-timeline__item" >
             <div class="nhs-cim-whole-timeline__header nhsuk-u-margin-bottom-2">
               <h2 class="nhs-cim-whole-timeline__title">Put on hold</h2>
               <p class="nhs-cim-whole-timeline__by">by Jenny Colbeck</p>
               <p class="nhs-cim-whole-timeline__date"><time datetime="2021-12-22T09:11">23 April 2023, 5.19 pm</time></p>
-              <p class="nhs-cim-whole-timeline__description">Reasons: Smartcard photo is a photo of an ID document</p>
-              
+              <p class="nhs-cim-whole-timeline__description">Reasons: Name and/or date of birth do not match</p>
+              <p class="nhs-cim-whole-timeline__description">Notes: Last name does not match on photo ID</p>            
             </div>
           </div>
-
+          
         </div>
 
       </div>
     </div>
 
-    <div class="nhsuk-card nhsuk-u-margin-bottom-5" id="notes">
+    <div class="nhsuk-card nhsuk-u-margin-bottom-5" style="display:none;" id="notes">
       <div class="nhsuk-card__content">
         <h2 class="nhsuk-card__heading">Notes</h2>
         
@@ -144,7 +155,7 @@
           </tbody>
         </table>
 
-        <a class="nhsuk-button nhsuk-button--secondary nhsuk-u-margin-top-4" href="/idchecker/v6/new-note">Add note</a>
+        
 
       </div>
     </div>
