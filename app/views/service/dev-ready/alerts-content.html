@@ -26,33 +26,63 @@
                 Write your alert
               </h1>
             </legend>
-
-            <p>To add a hyperlink, use this format: [link text|http://example.com]</p>
             
             <div class="nhsuk-form-group">
               <label class="nhsuk-label" for="heading">
                 Heading
               </label>
               <textarea class="nhsuk-textarea" id="heading" name="heading" rows="2" value="{{ data['heading'] }}"></textarea>
-              <div class="nhsuk-hint nhsuk-u-padding-top-2" id="character-count-hint">
-                You have 200 characters remaining
-                </div>
             </div>
 
             <div class="nhsuk-form-group">
               <label class="nhsuk-label" for="body">
-                Body (optional)
+                Body text (optional)
               </label>
               <textarea class="nhsuk-textarea" id="body" name="body" rows="2" value="{{ data['body'] }}"></textarea>
-              <div class="nhsuk-hint nhsuk-u-padding-top-2" id="character-count-hint">
-                You have 200 characters remaining
+            </div> 
+
+            <div class="nhsuk-form-group">
+      
+              <div class="nhsuk-checkboxes nhsuk-checkboxes--conditional">
+        
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="link-1" name="link" type="checkbox" value="email" aria-controls="conditional-link-1" aria-expanded="false">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="link-1">
+                    Include a link to a webpage
+                  </label>
                 </div>
-            </div>
-            
+        
+                <div class="nhsuk-checkboxes__conditional nhsuk-checkboxes__conditional--hidden" id="conditional-link-1">
+        
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="link-text">
+                      Link text
+                    </label>
+                    <input class="nhsuk-input nhsuk-u-width-one-half" id="link-text" name="link-text" type="text" value="{{ data['link-text'] }}">
+                  </div>
+      
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="link-url">
+                      Link url
+                    </label>
+                    <input class="nhsuk-input nhsuk-u-width-full" id="link-url" name="link-url" type="text" value="{{ data['link-url'] }}">
+                  </div>     
+      
+        
+                </div>
+        
+              </div>
+    
+          </div>
 
           </fieldset>
         
         </div>
+
+
+
+        
+      
         
 
         {{ button({

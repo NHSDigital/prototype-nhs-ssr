@@ -30,7 +30,7 @@
         </svg>
         <h3 class="nhsuk-u-visually-hidden">Information:</h3>
         <p class="nhsuk-u-font-weight-bold">{{ data['heading'] }}</p>
-        <p>{{ data['body'] }}</p>
+        <p>{{ data['body'] }} <a href="">{{ data['link-text'] }}</a></p>
       </div>
 
       <h2>Alert details</h2>
@@ -69,14 +69,42 @@
 
         <div class="nhsuk-summary-list__row">
           <dt class="nhsuk-summary-list__key">
-            Bodt
+            Body text
           </dt>
           <dd class="nhsuk-summary-list__value">
             {{ data['body'] }}
           </dd>
           <dd class="nhsuk-summary-list__actions">
             <a href="/service/dev-ready/alerts-content">
-              Change<span class="nhsuk-u-visually-hidden"> heading</span>
+              Change<span class="nhsuk-u-visually-hidden"> body</span>
+            </a>
+          </dd>
+        </div> 
+
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            Link text
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            {{ data['link-text'] }}
+          </dd>
+          <dd class="nhsuk-summary-list__actions">
+            <a href="/service/dev-ready/alerts-content">
+              Change<span class="nhsuk-u-visually-hidden"> link text</span>
+            </a>
+          </dd>
+        </div> 
+
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            Link url
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            {{ data['link-url'] }}
+          </dd>
+          <dd class="nhsuk-summary-list__actions">
+            <a href="/service/dev-ready/alerts-content">
+              Change<span class="nhsuk-u-visually-hidden"> link url</span>
             </a>
           </dd>
         </div> 
