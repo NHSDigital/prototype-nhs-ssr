@@ -4,6 +4,15 @@
  Take a photo of the back of your driving licence
 {% endblock %}
 
+{% block outerContent %}
+  {{ backLink({
+    "href": "/applicant/dev-ready/skeleton/mobile/id-front-check",
+    "text": "Back",
+    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
+{% endblock %}
+
+
 
 {% block content %}
   <div class="nhsuk-grid-row">
