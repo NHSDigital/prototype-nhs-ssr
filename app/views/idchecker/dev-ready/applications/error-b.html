@@ -428,39 +428,17 @@
     <div class="nhsuk-card nhsuk-u-margin-bottom-5" id="face-scan">
       <div class="nhsuk-card__content">
         <h2 class="nhsuk-card__heading">Face likeness and liveness</h2>
-        <p class="nhsuk-u-reading-width">Compare the face scan with photo IDs to verify a true likenesss.</p>
+        <p class="nhsuk-u-reading-width">Face photo compared with the following ID documents:</p>
 
-        <p>Likeness values should be higher than 0.85</p>
-            
-        <dl class="nhsuk-summary-list nhsuk-summary-list nhsuk-u-width-two-thirds">
-
+        <dl class="nhsuk-summary-list nhsuk-u-width-two-thirds">
           <div class="nhsuk-summary-list__row">
-            <dt class="nhsuk-summary-list__key key-width">
-              eChip vs face scan
+            <dt class="nhsuk-summary-list__key nhsuk-u-width-one-quarter">
+              Photo ID 1
             </dt>
             <dd class="nhsuk-summary-list__value">
-              0.67574
+              Faces match (Similarity score = 66.1)
             </dd>
           </div>
-
-          <div class="nhsuk-summary-list__row">
-            <dt class="nhsuk-summary-list__key key-width">
-              eChip vs photo ID
-            </dt>
-            <dd class="nhsuk-summary-list__value">
-              0.8734
-            </dd>
-          </div>
-
-          <div class="nhsuk-summary-list__row">
-            <dt class="nhsuk-summary-list__key key-width">
-              Photo ID vs face scan
-            </dt>
-            <dd class="nhsuk-summary-list__value">
-              0.7465
-            </dd>
-          </div>
-
         </dl>
 
         <div class="nhsuk-grid-row">
@@ -473,18 +451,6 @@
           <div class="nhsuk-grid-column-one-half">
             
             <div class="nhsuk-expander-group">
-              <details class="nhsuk-details nhsuk-expander">
-                <summary class="nhsuk-details__summary">
-                  <span class="nhsuk-details__summary-text">
-                    Compare to eChip
-                  </span>
-                </summary>
-                <div class="nhsuk-details__text">
-                  <div class="container">
-                    <img src="/images/biometric.png" alt="biometric chip photo">
-                  </div>
-                </div>
-              </details>
 
               <details class="nhsuk-details nhsuk-expander">
                 <summary class="nhsuk-details__summary">
@@ -629,7 +595,6 @@
                 </label>
                 <select class="nhsuk-select" id="photo-source" name="photo-source">
                   <option value="1" selected>Uploaded by applicant</option>
-                  <option value="2" >eChip</option>
                   <option value="3">Photo ID 1 extract</option>
                   <option value="4">Photo ID 2 extract</option>
                   <option value="5">Face scan</option>
