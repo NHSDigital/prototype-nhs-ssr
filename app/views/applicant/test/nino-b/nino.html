@@ -1,0 +1,79 @@
+{% extends 'layout.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Do you have a National Insurance number?
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+  {{ backLink({
+    "href": "",
+    "text": "Back",
+    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <form action="/applicant/test/nino-b/enter-nino" method="post" class="form">
+
+        <div class="nhsuk-form-group">
+
+          <fieldset class="nhsuk-fieldset">
+            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xl">
+              <h1 class="nhsuk-fieldset__heading">
+                Do you have a National Insurance number?
+              </h1>
+            </legend>
+
+            <p>An National Insurance number is...</p>
+
+            <p>You may not have a National Insurance number if you are working in the UK for the first time...</p>
+        
+            <div class="nhsuk-radios">
+        
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" id="nino-yes" name="nino" type="radio" value="yes">
+                <label class="nhsuk-label nhsuk-radios__label" for="nino-yes">
+                  Yes, I have a National Insurance number
+                </label>
+              </div>
+        
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" id="nino-no" name="nino" type="radio" value="no">
+                <label class="nhsuk-label nhsuk-radios__label" for="nino-no">
+                  No, I have never had a National Insurance number
+                </label>
+              </div>
+
+              <div class="nhsuk-radios__divider">or</div>
+
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" id="nino-lost" name="nino" type="radio" value="lost">
+                <label class="nhsuk-label nhsuk-radios__label" for="nino-lost">
+                 I do not know my National Insurance number
+                </label>
+              </div>
+        
+            </div>
+          </fieldset>
+        
+        </div>
+        
+
+        {{ button({
+          "text": "Continue"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
