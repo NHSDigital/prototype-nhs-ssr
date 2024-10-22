@@ -17,6 +17,25 @@ router.get('/clear-data-development', (req, res) => {
 })
 
 
+// Applicant test
+
+
+router.post('/applicant/test/nino-b/enter-nino', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var nino = req.session.data['nino']
+
+  // Check whether the variable matches a condition
+  if (nino == "yes"){
+    // Send user to next page
+    res.redirect('/applicant/test/nino-b/enter-nino')
+  } else {
+    // Send user to ineligible page
+    res.redirect('/applicant/test/nino-b/check-your-answers')
+  }
+
+})
+
 
 // Smartcard v5 routes
 
