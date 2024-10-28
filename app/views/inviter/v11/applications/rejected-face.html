@@ -1,0 +1,209 @@
+{% extends 'layout-inviter-v11.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Application: Isabel Lawrence
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+  {{ backLink({
+    "href": "/inviter/v11/dashboard",
+    "text": "Back",
+    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-3">
+      Application: Isabel Lawrence
+    </h1>
+
+    <p class="nhsuk-body-l nhsuk-u-font-weight-bold grey-text nhsuk-u-margin-bottom-2">Status: Rejected</p>
+    <p class="grey-text nhsuk-u-margin-bottom-5">(Face to face required)</p>
+
+    <a class="nhsuk-button nhsuk-button--secondary nhsuk-u-margin-right-5" href="#">Mark as done</a> <a class="nhsuk-button nhsuk-button--secondary" href="/inviter/v11/applications/reopened">Reopen application</a>
+
+    <div class="nhsuk-card nhsuk-u-margin-bottom-5">
+      <div class="nhsuk-card__content">
+        <h3 class="nhsuk-card__heading">
+          Application summary
+        </h3>
+
+        <dl class="nhsuk-summary-list">
+
+          
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+            Application ID
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              gdO-dLoee-aeKKvm-RFU0yU
+            </dd>
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+            Raised by
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+            Tim Bond on 8 April 2023
+            </dd>
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+            Requestor email address
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+            tim.bond58@nhs.net
+            </dd>
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+            Organisation
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+            	Barsetshire NHS Foundation Trust (RWA)
+            </dd>
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+            Last updated on
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+            11 April 2023
+            </dd>
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+            Requstor notes
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+            Child ods code is 83457D
+            </dd>
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+            Invites sent
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+            1
+            </dd>
+          </div>
+
+        </dl>
+
+      </div>
+    </div>
+
+
+    <div class="nhsuk-card nhsuk-u-margin-bottom-5">
+      <div class="nhsuk-card__content">
+        <h3 class="nhsuk-card__heading">
+          Rejection details
+        </h3>
+
+        <p>Face to face meeting required.</p>
+
+        <dl class="nhsuk-summary-list">
+        
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Rejection reasons
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              Name and/or date of birth do not match
+            </dd>
+          </div>  
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Rejection notes
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              Last name provided by applicant does not match last name on passport
+            </dd>
+          </div>
+
+        </dl>
+
+      </div>
+    </div>
+
+
+    <div class="nhsuk-card nhsuk-u-margin-bottom-5">
+      <div class="nhsuk-card__content">
+        <h3 class="nhsuk-card__heading">
+          Applicant details
+        </h3>
+
+        <dl class="nhsuk-summary-list">
+
+          
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Full name
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              Isabel Lawrence
+            </dd>
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Work email address
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              Isabel.lawrence@nhs.net
+            </dd>
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Mobile number
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              079946823098
+            </dd>
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Delivery address
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              Not required
+            </dd>
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Notes
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              smartcard with nurse practitioner role
+            </dd>
+          </div>
+
+        </dl>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
