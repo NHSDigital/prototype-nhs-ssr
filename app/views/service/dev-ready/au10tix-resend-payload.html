@@ -1,7 +1,7 @@
 {% extends 'layout-service-dev-ready.html' %}
 
 {% block pageTitle %}
-Create a new Au10tix link
+  Retry Xydus approval for an application
 {% endblock %}
 
 {% block outerContent %}
@@ -17,10 +17,20 @@ Create a new Au10tix link
     <div class="nhsuk-grid-column-two-thirds">
 
       <h1>
-        Create a new Au10tix link
+        Resend Au10tix payload
       </h1>
 
-      <p>Enter an application ID to create a new Au10tixlink for an applicant who is experiencing issues using the prove your identity service.</p>
+      <p>Enter an application ID to resend the Au10tix payload from the console to ID Checker.</p>
+
+      <div class="nhsuk-warning-callout">
+        <h3 class="nhsuk-warning-callout__label">
+          <span role="text">
+            <span class="nhsuk-u-visually-hidden">Important: </span>
+            Important
+          </span>
+        </h3>
+        <p>This process must only be used when an issue with an application payload has been identifed by the service team. </p>
+      </div>
 
       <div class="nhsuk-form-group nhsuk-u-margin-top-3">
         <label class="nhsuk-label nhsuk-label--s nhsuk-u-margin-bottom-1" for="search-1">
@@ -29,7 +39,7 @@ Create a new Au10tix link
         <input class="nhsuk-input nhsuk-input--width-20" id="search-1" name="search-1" type="text">
       </div>
       
-      <a class="nhsuk-button" href="/service/dev-ready/au10tix-created">Create new link</a>
+      <a class="nhsuk-button" href="/service/dev-ready/au10tix-resent-payload">Resend payload</a>
         
        
   

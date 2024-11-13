@@ -1,0 +1,84 @@
+{% extends 'layout-service-dev-ready.html' %}
+
+{% block pageTitle %}
+  Service management
+{% endblock %}
+
+{% block outerContent %}
+  {{ backLink({
+    "href": "/service/dev-ready/dashboard",
+    "text": "Back",
+    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <h1>
+        Xydus actions
+      </h1>
+
+
+
+      <ul class="nhsuk-grid-row nhsuk-card-group">
+        <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable">
+            <div class="nhsuk-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="/service/dev-ready/xydus-create-link">Create a new Download app link</a>
+              </h2>
+              <p class="nhsuk-card__description">Create a new Xydus Download App link for an applicant when there is an issue using the app.</p>
+            </div>
+          </div>
+        </li> 
+        <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable">
+            <div class="nhsuk-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="/service/dev-ready/xydus-resend-link">Resend a Download App link</a>
+              </h2>
+              <p class="nhsuk-card__description">Resend the  Xydus Download App link text messages to an applicant when there is an issue using the app.</p>
+            </div>
+          </div>
+        </li>   
+        <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable">
+            <div class="nhsuk-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="/service/dev-ready/xydus-payload">View application payload</a>
+              </h2>
+              <p class="nhsuk-card__description">View the JSON payload provided by Xydus.</p>
+            </div>
+          </div>
+        </li>
+        <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable">
+            <div class="nhsuk-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="/service/dev-ready/xydus-approval-retry">Retry approval</a>
+              </h2>
+              <p class="nhsuk-card__description">Retry the Xydus approval from EMS2 to ID Checker when there is an issue processing the payload.</p>
+            </div>
+          </div>
+        </li>  
+        <li class="nhsuk-grid-column-one-half nhsuk-card-group__item" style="display:none;">
+          <div class="nhsuk-card nhsuk-card--clickable">
+            <div class="nhsuk-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="/service/dev-ready/xydus-failed-sms">View text messages that could not be sent</a>
+              </h2>
+              <p class="nhsuk-card__description">View and resend Download App link text messages which could not be sent.</p>
+            </div>
+          </div>
+        </li>
+        
+      </ul>
+
+    
+
+    </div>
+
+  </div>
+{% endblock %}
