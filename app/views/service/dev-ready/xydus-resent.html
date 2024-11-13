@@ -1,12 +1,12 @@
 {% extends 'layout-service-dev-ready.html' %}
 
 {% block pageTitle %}
-  Resend Download App link
+  Retry Xydus approval for an application
 {% endblock %}
 
 {% block outerContent %}
   {{ backLink({
-    "href": "/service/dev-ready/dashboard",
+    "href": "/service/dev-ready/xydus",
     "text": "Back",
     "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
   }) }}
@@ -15,6 +15,15 @@
 {% block content %}
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
+
+      <div class="nhsuk-alert nhsuk-alert--success nhsuk-alert--icon">
+        <svg class="nhsuk-icon nhsuk-icon__tick nhsuk-alert__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12"></path>
+        </svg>
+        <h1 class="nhsuk-u-visually-hidden">Success:</h1>
+        <p class="nhsuk-u-font-weight-bold">Application ID: TQXo-0Ep06p-V2crk-FPJGb Download App link text message successfully resent</p>
+      </div>
+
 
       <h1>
         Resend Download App link
@@ -29,7 +38,7 @@
         <input class="nhsuk-input nhsuk-input--width-20" id="search-1" name="search-1" type="text">
       </div>
       
-      <a class="nhsuk-button" href="/service/dev-ready/resent">Resend link</a>
+      <a class="nhsuk-button" href="">Resend link</a>
         
        
   
