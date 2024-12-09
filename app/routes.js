@@ -2487,7 +2487,7 @@ router.post('/applicant/v22/step-1/2-photo-id', function (req, res) {
 
   if (poa == "driving licence"){
     // Send user to next page
-    res.redirect('/applicant/v21/step-1/no-dl')
+    res.redirect('/applicant/v22/step-1/no-dl')
   } 
 
   else {
@@ -2512,7 +2512,6 @@ router.post('/applicant/v22/offline/no-photo-id', function (req, res) {
   }
 
 })
-
 
 
 // id checker v5
