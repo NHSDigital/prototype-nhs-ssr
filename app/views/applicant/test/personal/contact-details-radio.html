@@ -1,0 +1,106 @@
+{% extends 'layout.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+Choose your contact details preferences
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>Choose your contact details preferences</h1>
+
+      <p>You can choose whether to add your contact details to your NHS Care ID profile. </p>
+
+      <p>Your contact details may be used for...</p>
+
+
+      <form action="/applicant/test/personal/check-your-answers-radio" method="post" class="form">
+
+      
+
+        <div class="nhsuk-form-group">
+
+          <fieldset class="nhsuk-fieldset">
+            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+              <h2 class="nhsuk-fieldset__heading">
+                Do you want to add your email address lucy*********@gmail.com to your profile?
+              </h2>
+            </legend>
+
+            <div class="nhsuk-radios">
+        
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" id="personal-email-yes" name="personal-email" type="radio" value="yes add my email address" {{ checked("personal-email", "yes add my email address") }}>
+                <label class="nhsuk-label nhsuk-radios__label" for="personal-email-yes">
+                  Yes, add my email address
+                </label>
+
+              </div>
+        
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" id="personal-email-no" name="personal-email" type="radio" value="no do not add my email address" {{ checked("personal-email", "no do not add my email address") }}>
+                <label class="nhsuk-label nhsuk-radios__label" for="personal-email">
+                  No, do not add my email address
+                </label>
+
+              </div>
+        
+            </div>
+          </fieldset>
+        
+        </div>
+
+
+        <div class="nhsuk-form-group nhsuk-u-margin-top-8">
+
+          <fieldset class="nhsuk-fieldset">
+            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+              <h2 class="nhsuk-fieldset__heading">
+                Do you want to add your mobile number ending *********5314 to your profile? 
+              </h2>
+            </legend>
+
+            <div class="nhsuk-radios">
+        
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" id="personal-mobile-yes" name="personal-mobile" type="radio" value="yes add my mobile number" {{ checked("personal-mobile", "yes add my mobile number") }}>
+                <label class="nhsuk-label nhsuk-radios__label" for="personal-mobile-yes">
+                  Yes, add my mobile number
+                </label>
+
+              </div>
+        
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" id="personal-mobile-no" name="personal-mobile" type="radio" value="no do not add my mobile number" {{ checked("personal-mobile", "no do not add my mobile number") }}>
+                <label class="nhsuk-label nhsuk-radios__label" for="personal-mobile">
+                  No, do not add my mobile number
+                </label>
+
+              </div>
+        
+            </div>
+          </fieldset>
+        
+        </div>
+        
+        
+
+        {{ button({
+          "text": "Continue"
+        }) }}
+
+      </form>
+
+
+      <p><a href="">Get more information about how your data is stored and used</a></p>
+
+    </div>
+  </div>
+
+{% endblock %}
