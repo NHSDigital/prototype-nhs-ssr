@@ -1,0 +1,85 @@
+{% extends 'layout.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+Add your contact details
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+  {{ backLink({
+    "href": "/applicant/test/personal/ni-number",
+    "text": "Back",
+    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <form action="/applicant/test/personal/check-your-answers" method="post" class="form">
+
+        <div class="nhsuk-form-group">
+
+          <fieldset class="nhsuk-fieldset">
+            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xl nhsuk-u-margin-bottom-7" aria-describedby="photo-ids-hint">
+              <h1 class="nhsuk-fieldset__heading">
+                Add your contact details
+              </h1>
+            </legend>
+
+            <p>You can choose whether to add your email address and mobile number to your NHS Care ID profile. </p>
+
+            <p>Your contact details can be used to help unlock your smartcard.</p>
+        
+            <div class="nhsuk-checkboxes">
+
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="personal-contact-email" name="personal-contact" type="checkbox" value="add my email address" {{ checked("personal-contact", "add my email address") }}>
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="personal-contact-email">
+                  Add email address lucyta*****@gmail.com
+                </label>
+              </div>
+      
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="personal-contact-mobile" name="personal-contact" type="checkbox" value="add my mobile number" {{ checked("personal-contact", "add my mobile number") }}>
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="personal-contact-mobile">
+                  Add mobile number ending *********5314
+                </label>
+              </div>
+
+              <div class="nhsuk-checkboxes__divider">or</div>
+
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="personal-contact-no" name="personal-contact" type="checkbox" value="do not add my contact details" {{ checked("personal-contact", "do not add my contact details") }}>
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="personal-contact-no">
+                  Do not add contact details to my profile
+                </label>
+              </div>
+      
+            </div>
+          </fieldset>
+        
+        </div>
+
+        
+        
+        
+
+        {{ button({
+          "text": "Continue"
+        }) }}
+
+      </form>
+
+
+      <p><a href="">Get more information about how your data is stored and used</a></p>
+
+    </div>
+  </div>
+
+{% endblock %}

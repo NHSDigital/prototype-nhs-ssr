@@ -1,0 +1,76 @@
+{% extends 'layout.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+Choose how we can contact you
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+  {{ backLink({
+    "href": "/applicant/test/personal/ni-number",
+    "text": "Back",
+    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <form action="/applicant/test/personal/check-your-answers" method="post" class="form">
+
+        <div class="nhsuk-form-group">
+
+          <fieldset class="nhsuk-fieldset">
+            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xl nhsuk-u-margin-bottom-7" aria-describedby="photo-ids-hint">
+              <h1 class="nhsuk-fieldset__heading">
+                Choose how we can contact you
+              </h1>
+            </legend>
+
+            <p>We may contact you to help unlock your smartcard.</p>
+
+            <p>Your contact details will be added to your NHS Care ID profile.</p>
+        
+            <div class="nhsuk-checkboxes">
+
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="personal-contact-email" name="personal-contact" type="checkbox" value="add my email address" {{ checked("personal-contact", "add my email address") }}>
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="personal-contact-email">
+                  Email address lucyta*****@gmail.com
+                </label>
+              </div>
+      
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="personal-contact-mobile" name="personal-contact" type="checkbox" value="add my mobile number" {{ checked("personal-contact", "add my mobile number") }}>
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="personal-contact-mobile">
+                  Mobile number ending *********5314
+                </label>
+              </div>
+      
+            </div>
+          </fieldset>
+        
+        </div>
+
+        
+        
+        
+
+        {{ button({
+          "text": "Continue"
+        }) }}
+
+      </form>
+
+
+      <p><a href="">Get more information about how your data is stored and used</a></p>
+
+    </div>
+  </div>
+
+{% endblock %}
